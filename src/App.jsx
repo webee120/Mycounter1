@@ -17,6 +17,9 @@ function App() {
   const plus10 = () => {
     setCount(count+10)
   }
+  const reset = () => {
+    setCount(0)
+  }
 
 
   return (
@@ -27,7 +30,7 @@ function App() {
         <div className='btn'>
           <button type='button' onClick={minus10}>-10</button>
           <button type='button' onClick={minus1}>-1</button>
-          <button type='button' className='reset'>Reset</button>
+          <button type='button' className='reset' onClick={reset}>Reset</button>
           <button type='button' onClick={plus1}>+1</button>
           <button type='button' onClick={plus10}>+10</button>
         </div>
